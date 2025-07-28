@@ -19,7 +19,21 @@ const myArr = [0, 1, 2, 3, 4, 5]
 const city1 = ['Delhi', 'Jaipur', 'Bhopal'];
 const city2 = ['Mumbai', 'Surat', 'Indore'];
 
-const city_names = [...city1, ...city2]
-console.log(city_names);
+const city_names = [...city1, ...city2] //spread out method
+// console.log(city_names);
 
+const another_array = [1, 2, 3, 4, [5, 6, 7], 7, [4,6, [7,2]]]
+
+const real_another_Arr = another_array.flat(Infinity) //to make single array
+
+// console.log(real_another_Arr);
+
+// console.log(Array.isArray("DEO")); -> false
+// console.log(Array.from("DEO")); -> ['D', 'E', 'O']
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3));
 
